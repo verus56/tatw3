@@ -1,0 +1,149 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0F766E;
+  --color-primary-dark: #115E59;
+  --color-primary-light: #CCFBF1;
+  --color-primary-50: #F0FDFA;
+  --color-secondary: #14B8A6;
+  --color-accent: #F59E0B;
+  --color-accent-dark: #D97706;
+  --color-accent-light: #FEF3C7;
+  --color-tatw-bg: #F8FAFC;
+  --color-surface: #FFFFFF;
+  --color-tatw-text: #0F172A;
+  --color-tatw-muted: #64748B;
+  --color-tatw-border: #E2E8F0;
+  --color-tatw-success: #22C55E;
+  --color-tatw-error: #EF4444;
+}
+
+:root {
+  --primary: #0F766E;
+  --primary-dark: #115E59;
+  --secondary: #14B8A6;
+  --accent: #F59E0B;
+  --background: #F8FAFC;
+  --surface: #FFFFFF;
+  --foreground: #0F172A;
+  --muted: #64748B;
+  --border: #E2E8F0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  direction: rtl;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  font-family: var(--font-cairo), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Glassmorphism subtle accents */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+/* Smooth badges and cards */
+.tatw-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 1rem;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tatw-card:hover {
+  border-color: #CBD5E1;
+  box-shadow: 0 10px 25px -5px rgba(15, 118, 110, 0.08), 0 8px 10px -6px rgba(15, 118, 110, 0.04);
+}
+
+/* Custom button styles */
+.btn-primary {
+  background-color: #0F766E;
+  color: #FFFFFF;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #115E59;
+  box-shadow: 0 4px 12px rgba(15, 118, 110, 0.25);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background-color: #F0FDFA;
+  color: #0F766E;
+  border: 1px solid #CCFBF1;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #CCFBF1;
+  color: #115E59;
+}
+
+.btn-accent {
+  background-color: #F59E0B;
+  color: #FFFFFF;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.btn-accent:hover {
+  background-color: #D97706;
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+  transform: translateY(-1px);
+}
