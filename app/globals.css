@@ -16,6 +16,7 @@
   --color-tatw-border: #E2E8F0;
   --color-tatw-success: #22C55E;
   --color-tatw-error: #EF4444;
+  --font-sans: var(--font-thmanyah), system-ui, sans-serif;
 }
 
 :root {
@@ -47,7 +48,7 @@ body {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
-  font-family: var(--font-cairo), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-family: var(--font-thmanyah), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 }
 
 /* Custom Scrollbar */

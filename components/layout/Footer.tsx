@@ -10,16 +10,16 @@ export function Footer() {
           {/* Brand & Mission */}
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-teal-500 to-teal-400 flex items-center justify-center text-slate-900 font-black text-xl shadow-md">
-                <span>ت</span>
-              </div>
+              <img
+                src="/logo.png"
+                alt="تطوع TAWTOU3"
+                className="h-14 w-auto object-contain bg-white rounded-2xl p-1.5 shadow-md"
+              />
               <div>
-                <span className="font-black text-2xl tracking-tight text-white">
-                  تطوّع
-                </span>
-                <span className="text-xs font-bold text-amber-400 mr-2 bg-amber-400/10 px-2 py-0.5 rounded-sm">
+                <span className="text-xs font-bold text-amber-400 bg-amber-400/10 px-2 py-0.5 rounded-md border border-amber-400/20">
                   TAWTOU3
                 </span>
+                <p className="text-xs text-slate-400 mt-1">المنصة الجزائرية للتطوع والتمكين</p>
               </div>
             </div>
             <p className="text-sm text-slate-400 leading-relaxed max-w-sm">

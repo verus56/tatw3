@@ -65,19 +65,18 @@ export function Navbar() {
           {/* Logo */}
           <div className="flex items-center gap-8">
             <Link href="/" className="flex items-center gap-3 group">
-              <div className="w-11 h-11 rounded-2xl bg-gradient-to-tr from-teal-800 to-teal-600 flex items-center justify-center text-white font-black text-xl shadow-md shadow-teal-700/20 group-hover:scale-105 transition-transform">
-                <span>ت</span>
-              </div>
-              <div>
+              <img
+                src="/logo.png"
+                alt="تطوع TAWTOU3"
+                className="h-12 w-auto object-contain group-hover:scale-105 transition-transform"
+              />
+              <div className="hidden sm:block">
                 <div className="flex items-center gap-1.5">
-                  <span className="font-black text-2xl tracking-tight text-teal-800">
-                    تطوّع
-                  </span>
-                  <span className="text-[10px] font-bold tracking-widest text-amber-500 uppercase bg-amber-50 px-1.5 py-0.5 rounded-md">
+                  <span className="text-[10px] font-bold tracking-widest text-amber-600 uppercase bg-amber-50 px-2 py-0.5 rounded-md border border-amber-200">
                     TAWTOU3
                   </span>
                 </div>
-                <p className="text-[11px] text-slate-500 font-medium -mt-1">
+                <p className="text-[11px] text-slate-500 font-medium mt-0.5">
                   المنصة الجزائرية للتطوع
                 </p>
               </div>

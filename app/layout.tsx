@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Cairo } from 'next/font/google';
+import localFont from 'next/font/local';
 import './globals.css';
 import { AppProvider } from '@/context/AppContext';
 import { Navbar } from '@/components/layout/Navbar';
@@ -8,10 +8,35 @@ import { Footer } from '@/components/layout/Footer';
 import { DemoUserSwitcher } from '@/components/layout/DemoUserSwitcher';
 import { ToastContainer } from '@/components/ui/ToastContainer';
 
-const cairo = Cairo({
-  subsets: ['arabic', 'latin'],
-  weight: ['300', '400', '500', '600', '700', '800', '900'],
-  variable: '--font-cairo',
+const thmanyah = localFont({
+  src: [
+    {
+      path: './fonts/thmanyahserifdisplay-Light.otf',
+      weight: '300',
+      style: 'normal',
+    },
+    {
+      path: './fonts/thmanyahserifdisplay-Regular.otf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: './fonts/thmanyahserifdisplay-Medium.otf',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: './fonts/thmanyahserifdisplay-Bold.otf',
+      weight: '700',
+      style: 'normal',
+    },
+    {
+      path: './fonts/thmanyahserifdisplay-Black.otf',
+      weight: '900',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-thmanyah',
   display: 'swap',
 });
 
@@ -29,6 +54,9 @@ export const metadata: Metadata = {
     'نقاط تطوع',
     'TAWTOU3',
   ],
+  icons: {
+    icon: '/logo.png',
+  },
 };
 
 export default function RootLayout({
@@ -37,7 +65,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ar" dir="rtl" className={cairo.variable}>
+    <html lang="ar" dir="rtl" className={thmanyah.variable}>
       <body className="min-h-screen flex flex-col bg-slate-50 text-slate-900 font-sans antialiased selection:bg-teal-100 selection:text-teal-900">
         <AppProvider>
           <Navbar />

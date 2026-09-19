@@ -145,9 +145,11 @@ export default function LoginPage() {
         {/* Left side in RTL - Decorative Branding */}
         <div className="lg:col-span-5 bg-gradient-to-br from-teal-800 via-teal-900 to-slate-900 p-8 sm:p-12 text-white flex flex-col justify-between relative overflow-hidden">
           <div className="relative z-10 space-y-4">
-            <div className="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center font-black text-2xl text-amber-400 border border-white/20">
-              ت
-            </div>
+            <img
+              src="/logo.png"
+              alt="تطوع TAWTOU3"
+              className="h-16 w-auto object-contain bg-white rounded-2xl p-2 shadow-lg"
+            />
             <h3 className="text-2xl font-black">منصة تطوّع</h3>
             <p className="text-xs text-teal-200 leading-relaxed">
               شارك. تعلّم. ساعد. واصنع أثرًا في مختلف أنحاء الوطن الجزائري.

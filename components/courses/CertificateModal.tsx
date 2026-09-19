@@ -69,9 +69,11 @@ export function CertificateModal({ certificate, isOpen, onClose }: CertificateMo
 
           <div className="relative z-10 space-y-6">
             <div className="flex justify-center">
-              <div className="w-16 h-16 rounded-2xl bg-teal-800 text-white flex items-center justify-center font-black text-2xl shadow-lg shadow-teal-900/20">
-                ت
-              </div>
+              <img
+                src="/logo.png"
+                alt="Logo"
+                className="w-16 h-16 object-contain rounded-2xl shadow-md"
+              />
             </div>
 
             <div className="space-y-1">

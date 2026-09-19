@@ -112,7 +112,12 @@ export default function RegisterPage() {
         ) : step === 1 ? (
           /* Step 1: Choose Role */
           <div className="space-y-8">
-            <div className="text-center space-y-2">
+            <div className="text-center space-y-2 flex flex-col items-center">
+              <img
+                src="/logo.png"
+                alt="تطوع TAWTOU3"
+                className="h-16 w-auto object-contain mb-1"
+              />
               <span className="text-xs font-bold text-teal-700 bg-teal-50 px-3 py-1 rounded-full">
                 الخطوة 1 من 2
               </span>
